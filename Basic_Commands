@@ -1,8 +1,18 @@
 Below are the basic commands required for working with Mongodb
 
-Database Name is Test1,
+Database Name will be Test1,
 Collection Name will be prac.
 
 
 List of All Docs: db.prac.find( {} )
 Add .preety() for structured output.
+
+
+
+
+* I have been working with Nested Documents, which i had no idea on how to filter/find in sub Documents, here's how to do it:
+
+Use . (dot) for every sub-document.
+eg, if we have a doc names country, within it a sub-doc named states, with in it is city, then to find/search query in city doc, 
+db.prac.find ( { 'country.states,city' : "Pune" } )
+Now the major point is to use single quote with key and double quote with value.
