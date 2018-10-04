@@ -5,7 +5,7 @@ Collection Name will be prac.
 
 
 List of All Docs: db.prac.find( {} )
-Add .preety() for structured output.
+Add .pretty() for structured output.
 
 
 
