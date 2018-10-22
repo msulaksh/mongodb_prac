@@ -3,6 +3,8 @@ Below are the basic commands required for working with Mongodb
 Database Name will be Test1,
 Collection Name will be prac.
 
+show dbs -- list down all the databases,
+use Database -- use particular db
 
 List of All Docs: db.prac.find( {} )
 Add .pretty() for structured output.
