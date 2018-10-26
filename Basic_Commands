@@ -18,3 +18,5 @@ Use . (dot) for every sub-document.
 eg, if we have a doc names country, within it a sub-doc named states, with in it is city, then to find/search query in city doc, 
 db.prac.find ( { 'country.states,city' : "Pune" } )
 Now the major point is to use single quote with key and double quote with value.
+
+
