@@ -1,0 +1,15 @@
+import pymongo
+
+my_client = pymongo.MongoClient("mongodb://localhost:27017/")
+my_db = myclient["test_db"]
+my_col = mydb["test_col"]
+
+print 'Database Connection Established'
+
+data = { "name": "John", "address": "Highway 37" }
+
+x = my_col.insert_one(data)          #just like db.my_col.insert()
+
+print 'Data Inserted'
+
+print(x.inserted_id)     # print id for newly added record
